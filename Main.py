@@ -121,17 +121,7 @@ def dijkstra(start, end, avoid_traffic=False):
     return path, distance[end]
 
 
-def has_traffic(path):
 
-    for i in range(len(path) - 1):
-
-        a = path[i]
-        b = path[i + 1]
-
-        if roads[a][b][1] == 1:
-            return True
-
-    return False
 
 
 def show_route(title, path, distance):
